@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Biografi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Biografi</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Saya</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>About Me</h2>
+        <p>Hey this is the start of my journey, I will be making a lot of mistakes and I will also be learning a lot from this Program. I hope that my journey will have a happy ending..</p>
+      </article>
+      <aside>
+        <div>
+          <img src="images/pic4.jpg" alt="Foto Anda">
+          <h3>Hanif Amar Muzakki</h3>
+          <p>I am an enthusiastic and highly motivated English education student with leadership skills and initiative. I like to learn new things and have experience in various work places. My previous work experiences are Freelance driver at Maxim Indonesia (PT Teknologi Perdana Indonesia), Part-time Food Service Specialist at Cavelet and I’m currently working at Genius Sports as freelance statistician.
+            Currently, I’m pursuing Bachelor’s degree in English education Universitas Sultan Ageng Tirtayasa, I expect to graduate in September 2024.
+            .</p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>Hak Cipta &copy; 2023 - Biografi</p>
+    </footer>
+    <script>
+      // menambahkan fungsi pada klik link navigasi
+      var links = document.querySelectorAll('nav a');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function(event) {
+          event.preventDefault();
+          alert('Anda mengklik link: ' + this.innerText);
+        });
+      }
+    </script>
+  </body>
+</html>
